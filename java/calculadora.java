@@ -1,73 +1,50 @@
+import java.util.Scanner;
+
 public class calculadora {
 
 
-public  class Main {
-
-	
-
-	// void indica que a rotina não retorna nenhum valor
-
-	// não precisao de return
-
-	public static void mostraNome(String nome) {
-
-		System.out.println (nome);
-
-	}
-
-		   	
-
-	// aqui, uma função que retorna um valor inteiro e recebe 3 argumentos como parâmetros
-
-	// é uma gunção e precisa do return
-
-	public static int calculadora (int num1, int num2, char oper) {
-
-		int resultado = 0;
-
-		switch (oper) {
-
-		case '+': resultado= (num1+num2);
-
-		          break;
-
-		case '-': resultado= (num1-num2);
-
-		 		  break;
-
-		 		  
-
-		}
-
-		return resultado;
-
-	}
-
-	
-
-	public static void main(String[] args) {
-
-		// TODO Auto-generated method stub
-
-		// chama o procedimento
-
-		mostraNome ("JAVAscript");
-
-		// chama a função
-
-		//int result=calculadora(10,20,'-');
-
-		//System.out.println (result);
-
-		// a linha de codigo abaixo, é o mesmo que as 2 linhas de codigo acima.
-
-		// Usa um OU outra solução
-
-		System.out.println (calculadora(10,20,'-'));
-
-     }
-
-}
+   public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Calculadora Simples");
+        System.out.print("Digite o primeiro número: ");
+        double num1 = scanner.nextDouble();
+        
+        System.out.print("Digite o operador (+, -, *, /): ");
+        char operator = scanner.next().charAt(0);
+        
+        System.out.print("Digite o segundo número: ");
+        double num2 = scanner.nextDouble();
+        
+        double result = 0.0;
+        
+        switch (operator) {
+            case '+':
+                result = num1 + num2;
+                break;
+            case '-':
+                result = num1 - num2;
+                break;
+            case '*':
+                result = num1 * num2;
+                break;
+            case '/':
+                if (num2 != 0) {
+                    result = num1 / num2;
+                } else {
+                    System.out.println("Erro: Divisão por zero não é permitida.");
+                    System.exit(1); // Encerra o programa com código de erro
+                }
+                break;
+            default:
+                System.out.println("Operador inválido.");
+                System.exit(1); // Encerra o programa com código de erro
+        }
+        
+        System.out.println("Resultado: " + result);
+        
+        scanner.close();
+    }
 }
 
  

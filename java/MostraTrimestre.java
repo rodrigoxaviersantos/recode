@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MostraTrimestre {
 public static void main(String[] args) {
 Scanner entrada = new Scanner (System.in);
-System.out.print("Digite o mes (1 a 12) ");
+System.out.print("Digite o mes (1 a 12):8 ");
 int mes = entrada.nextInt();
 switch (mes) {
 case 1:
