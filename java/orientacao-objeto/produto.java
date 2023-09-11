@@ -58,7 +58,7 @@ public class produto {
 	}	
  public static void main (String [] args){
     Scanner entrada = new Scanner(System.in);
-	produto produto = new Produto(id,nome,preco,qtEstoque);
+	final produto produto = new Produto(id,nome,preco,qtEstoque);
 
     System.out.print("Digite Nome : ");
     String nome=entrada.nextLine();
