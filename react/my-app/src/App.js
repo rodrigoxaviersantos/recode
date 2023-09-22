@@ -1,11 +1,15 @@
 import './App.css';
-import Teste from './component/Teste';
+import AreaTexto from './component/AreaTexto';
+import Button from './component/Button';
 
 function App() {
   return (
-    <>
-    <Teste/>
-    </>
+    <div className='App'>
+      <h1>Minha Página</h1>
+      <AreaTexto />
+      <Button />
+    </div>
   );
 }
+
 export default App;
