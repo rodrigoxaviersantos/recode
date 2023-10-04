@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversor de Moeda</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Moeda</h1>
+        <form action="resultado.jsp" method="post">
+            <input type="text" name="valor" placeholder="Valor" required><br>
+            <label for="moedaDestino">Escolha uma moeda:</label>
+            <select name="moedaDestino" required>
+                <option value="USD">Dolar Americano (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="JPY">Iene (JPY)</option>
+                <option value="GBP">Libra Esterlina (GBP)</option>
+            </select><br>
+            <button type="submit">Converter</button>
+        </form>
+    </div>
+</body>
+</html>
