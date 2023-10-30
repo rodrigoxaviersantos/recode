@@ -1,0 +1,29 @@
+/* styles.module.css */
+
+.titleContainer {
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+  
+  .ulContainer {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .listItem {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .menuContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
