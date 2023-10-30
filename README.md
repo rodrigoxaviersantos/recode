@@ -24,3 +24,15 @@ Este é um repositório destinado a estudos e projetos desenvolvidos através da
 <p align="center">
   <img alt="projeto Habits" src="https://github.com/rodrigoxaviersantos/recode/assets/116025593/fadb83c4-f90c-4c4f-8aa3-fd1f773c0d76" width="100%">
 </p>
+
+
+## 🏷️ Pages
+
+ - Criando App Next.js. [Projeto](https://github.com/rodrigoxaviersantos/recode/tree/main/next_js/my-app)
+
+
+
+
+<p align="center">
+  <img alt="projeto Habits" src="https://github.com/rodrigoxaviersantos/recode/assets/116025593/db6f448f-961a-44fe-a161-5b12488f2978" width="100%">
+</p>
